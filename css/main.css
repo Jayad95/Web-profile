@@ -58,4 +58,96 @@ h1>span {
 #dcard button {
     background: linear-gradient(135deg, #ff5f9e, #ff9966);
     border-color: transparent
+
 }
+
+/* sideLable CSS Start */
+.sideLabels {
+            background: linear-gradient(135deg, #ff5f9e, #ff9966);
+            position: fixed;
+            left: -25px;
+            z-index: 99;
+            width: 35px;
+            border-radius: 0 6px 6px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 0 5px;
+            transition: all 0.5s ease;
+        }
+
+
+
+        a.socialIcon i {
+            display: inline-block;
+            font-size: 1rem;
+            font-size: inherit;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a.socialIcon {
+            color: #fff;
+            opacity: 0;
+            transition: all 0.2s ease;
+            display: flex;
+            flex-direction: row-reverse;
+            position: relative;
+            padding: 10px 5px;
+        }
+
+        a.socialIcon span {
+            display: flex;
+            position: absolute;
+            top: 0;
+            background: linear-gradient(135deg, #ff5f9e, #ff9966);
+            height: 100%;
+            width: 80px;
+            right: 30px;
+            border-radius: 0 6px 6px 0;
+            z-index: 0;
+            padding: 0 5px;
+            transition: all 0.5s ease;
+            align-items: center;
+            justify-content: center;
+            border-left: 2px solid linear-gradient(135deg, #ff5f9e, #ff9966);
+            text-align: center;
+            font-size: 1rem;
+        }
+
+        .sideLabels:hover {
+            transform: translateX(25px);
+        }
+
+        .sideLabels:hover::after {
+            opacity: 0;
+            content:none;
+        }
+
+        .sideLabels:hover a.socialIcon {
+            opacity: 1;
+        }
+
+        .sideLabels:hover a.socialIcon:hover .socialLabel {
+            transform: translateX(113px);
+        }
+        .socialLabel:hover .socialLabel {
+            transform: translateX(113px);
+        }
+
+        .sideLabels::after {
+
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translate(100%, -50%);
+            border-width: 12px;
+            border-style: solid;
+            border-color: transparent;
+            border-left-color: #ff5f9e;
+            /* green triangle */
+            transition: opacity 0.3s ease;
+        }
+/* sideLable CSS End */
