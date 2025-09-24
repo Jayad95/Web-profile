@@ -42,9 +42,13 @@ body {
     bottom: 0px;
     transition: right 0.3s ease;
     /* smooth slide */
-    background: linear-gradient(135deg, #ff5f9e, #ff9966)
+    
 }
-
+.sideOption p
+{
+    background: linear-gradient(135deg, #ff5f9e, #ff9966);
+    padding:5px;
+}
 h1>span {
     font-size: 12px;
     color: #ff9966;
@@ -168,6 +172,7 @@ h1>span {
 
 
 /* sideLable CSS End */
+
 
 
 
