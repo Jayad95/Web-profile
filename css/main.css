@@ -91,6 +91,7 @@ h1>span {
         a.socialIcon {
             color: #fff;
             opacity: 0;
+            text-decoration:none;
             transition: all 0.2s ease;
             display: flex;
             flex-direction: row-reverse;
@@ -152,4 +153,5 @@ h1>span {
             transition: opacity 0.3s ease;
         }
 /* sideLable CSS End */
+
 
