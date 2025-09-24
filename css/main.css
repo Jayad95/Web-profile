@@ -152,6 +152,22 @@ h1>span {
             /* green triangle */
             transition: opacity 0.3s ease;
         }
+@media screen and (max-width: 768px) {
+
+    .sideLabels {
+        transform: translateX(25px);
+    }
+    a.socialIcon {
+            opacity: 1;
+        }
+    .sideLabels::after 
+    {
+        content:none;
+    }
+}
+
+
 /* sideLable CSS End */
+
 
 
