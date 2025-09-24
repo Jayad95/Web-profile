@@ -38,11 +38,16 @@ body {
 
 .sideOptions {
     position: fixed;
-    right: -120px;
-    bottom: 0px;
-    transition: right 0.3s ease;
+    right: 0px;
+    bottom: 10px;
+    transition: right 0.3s 
+ease;
     background: linear-gradient(135deg, #ff5f9e, #ff9966);
-    
+    padding: 5px;
+}
+.sideOptions a
+{
+    text-decoration:none;
 }
 h1>span {
     font-size: 12px;
@@ -167,6 +172,7 @@ h1>span {
 
 
 /* sideLable CSS End */
+
 
 
 
